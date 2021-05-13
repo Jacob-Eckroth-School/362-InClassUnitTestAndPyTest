@@ -1,6 +1,8 @@
 
 
 def isPalindrome(userEntry):
+    if(not isinstance(userEntry,str)):
+        return False
     #First put it into lowercase.
     lowerString = userEntry.lower()
     reversedEntry = lowerString[::-1]
